@@ -61,6 +61,15 @@ tools/translate/STYLE.md  번역 표기 규칙 정본
 engine/                   서브모듈 studio-miris-engine (도구·포맷 지식·절차)
 ```
 
+## 화면 확대
+
+이 타이틀은 **2×(1280×960)** 로 맞춰져 있다. 실측값과 이 게임에서 겪은 함정은
+**[docs/UPSCALE.ja.md](docs/UPSCALE.ja.md)** (日本語) 에 정리했다 — 공유 심볼 때문에
+이름 글자만 커진 일, 곡 제목이 행을 넘친 일, 선택지 크래시 원인 같은 것들.
+일반적인 절차는 [engine/docs/UPSCALE.ja.md](engine/docs/UPSCALE.ja.md).
+
+번역과 무관하게 **해상도만 올리는 용도로도** 그대로 쓸 수 있다.
+
 ## 시나리오 읽는 법
 
 - 시나리오는 날짜 기반 명명(`0506_01` = 5월 6일 첫 장면), 분기는 접미사(a/b/c).
