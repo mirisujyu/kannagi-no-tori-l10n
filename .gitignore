@@ -1,0 +1,35 @@
+# 저작권 있는 게임 바이너리 / 대용량 자산 — 커밋 금지
+*.exe
+*.exe.*
+*.axr
+*.ax2
+*.ax3
+*.ax4
+*.ttf
+*.ttc
+*.otf
+
+# 게임 리소스
+cg/
+*.png
+*.wav
+*.ogg
+save/
+
+# 임시/작업 파일
+_*.txt
+_*.csv
+_*.bin
+_*.scn
+*.pyc
+__pycache__/
+scratchpad/
+fonts/*.ttf
+
+# 번역 에이전트가 리포 루트에 흘린 산출물 (스크래치패드에 있어야 한다)
+/OUT_*.tsv
+/SKIP_*.txt
+
+# 이 타이틀의 실제 설정 — config.tmpl.py 를 복사해 채운 것. 값이 갈리는 항목은
+# 프로젝트 시작 시 문답으로 정한다. 리포에는 템플릿만 둔다.
+config.py
