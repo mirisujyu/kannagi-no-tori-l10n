@@ -33,3 +33,8 @@ fonts/*.ttf
 # 이 타이틀의 실제 설정 — config.tmpl.py 를 복사해 채운 것. 값이 갈리는 항목은
 # 프로젝트 시작 시 문답으로 정한다. 리포에는 템플릿만 둔다.
 config.py
+
+# 번역 결과물 — main 에는 올리지 않는다. l10n-ko 브랜치가 추적한다.
+# (이미 추적 중인 파일에는 gitignore 가 적용되지 않으므로 l10n-ko 에서는 그대로 버전 관리된다)
+translation/strings.json
+translation/strings_review.tsv
