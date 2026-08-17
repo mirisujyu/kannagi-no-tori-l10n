@@ -19,6 +19,8 @@ FACE   = "KannagiKR-Noto"                                 # exe 가 CreateFontIn
 # ── 세로 시프트 (렌더가 GetGlyphOutlineA/GGO_GRAY8 라 디센더가 잘림)
 TARGET_BOTTOM_EM = 0.031                              # 한글 최저점을 이 위치로 올림
 SAMPLE = [0xAC00, 0xD7A3, 0xADF8, 0xC7A5, 0xB755]     # 최저점 표본(가·힣·그·장·뵵)
+# 한글 표본만 보는 값이다. 그보다 깊은 디센더(괄호·쉼표 등)는 빌더의 세로 맞춤이
+# 따로 걸러 낸다(FIT_WINDOW_EM 기본 0.01~0.99 em). TEXT_RENDER.md §4-1.
 
 # ── 미번역 일본어 표시용 글리프 병합
 # 어느 글자를 어디에 심을지는 `ujyu jpmap` 이 만든 translation/jp_charmap.json 이
