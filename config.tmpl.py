@@ -204,7 +204,11 @@ SCN_DIMS_AUTO = ("save.scn", "load.scn", "config.scn",
                  # cg.scn 은 예전에 SCN_DIMS 로 4개만 동결했는데 auto 가 32개를
                  # 전부 도출하므로 이쪽으로 옮겼다(둘 다 두면 ×4 가 된다).
                  "cg.scn", "music.scn", "scene.scn",
-                 "endchk.scn", "titlechk.scn")
+                 "endchk.scn", "titlechk.scn",
+                 # 캐스트·스태프롤. 가림막 layer(640×60)와 스크롤 창(20,60,600,360)이
+                 # 1× 로 남아 화면 좌상단 1/4 에만 나왔다. 스크롤 시작(-360)·끝(4120)도
+                 # 좌표라 같이 ×N 한다 — 시간 인자(100000ms)는 그대로 둬야 배속이 같다.
+                 "staffroll.scn", "ending2.scn")
 
 # ×N 하기 전에 갈아끼울 씬 심볼 값. {scn: [((시작심볼, 끝심볼), {옛값: 새값})]}
 # music.scn #130~#161 = 곡별 제목 글꼴 크기(제목이 길수록 작다). ×2 하면 44 가 행에
